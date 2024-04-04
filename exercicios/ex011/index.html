@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentees ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p> 
+    <h2>Maneira simples de reproduzir áudio</h2>    
+    <audio src="midia/Ladybug-mp3.mp3" controls loop></audio
+        >
+    <h2>Melhor maneira de reproduzir áudio</h2>
+    <audio preload="metadata" controls loop><!--O preload="metadata" irá fazer o download para exibir o áudio somente depois de clicar no play. O controls é utilizado para exibir os controles de audio. O loop é utilizado para assim que acabar de tocar o áudio ele volte a tocar desde o ínicio novamente-->
+        <source src="midia/Ladybug-mp3.mp3" type="audio/mpeg"><!--primeiro vai tocar o áudio em mp3-->
+        <source src="midia/Ladybug-ogg.ogg" type="audio/ogg"><!--se o navegador não conseguir carregar em mp3 vai tentar em o arquivo de áudio ogg-->
+        <source src="midia/Ladybug-wav.wav" type="audio/wav"><!--se o navegador não conseguir carregar nem o mp3 nem o ogg vai tentar carregar o arguivo de audioo wav-->
+        <p>Infelismente seu navegador não consegue reproduzir áudio <a href="midia/Ladybug-mp3.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+    <!--MP3 WAV OGG-->
+</body>
+</html>

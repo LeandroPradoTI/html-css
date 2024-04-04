@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="shortcut icon" href="Imagens/icone.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Desafio das Imagens</h1>
+    <p>Inserir imagens em HTML é muuito simples, tanto no conteúdo, quanto lá em cima, como ícone de favoritos!</p>
+    <picture>
+        <source media="(max-width: 200px)" srcset="Imagens/github-p.png" type="image/png">
+        <source media="(max-width: 500px)" srcset="Imagens/github-m.png" type="image/png">
+        <source media="(max-width: 1500px)" srcset="Imagens/github-g.png" type="image/png">
+        <img src="Imagens/github-gg.png" alt="Imagem flexível">
+    </picture>
+</body>
+</html>

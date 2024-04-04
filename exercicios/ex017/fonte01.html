@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            Obs: Recomendado utilizar para tamanho de fontes - "px" ou "em", pois pt é mais para impressão
+            */
+            font-size: 16px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+        }
+
+        h2{
+        /* Shorthand
+        - font-style -> font weight -> font-size -> sans-serif
+        */
+            font: italic bolder 3em arial, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quaerat eveniet illo maiores molestias, eaque in consectetur sapiente vel culpa ullam saepe aliquid sunt dolorum excepturi atque debitis ratione esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequatur eligendi impedit architecto labore ipsam similique sunt esse, minus dicta obcaecati accusantium voluptatem, molestiae perspiciatis accusamus ex voluptatibus! Veniam, cum.</p>
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam possimus dolor, laudantium, animi reprehenderit doloremque quidem nihil asperiores iste facilis voluptate! Maiores veritatis temporibus blanditiis nisi iste unde sit quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem, necessitatibus nam quos explicabo temporibus mollitia quia voluptas repudiandae earum provident maiores doloremque, perferendis magni placeat. Est, inventore? Asperiores, nihil.</p>
+</body>
+</html>
