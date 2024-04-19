@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima et quidem, quas fugit veritatis dolorem ipsam minus, repellendus possimus repudiandae rem, laudantium atque quo impedit soluta. Optio ipsum magnam quisquam.</p>
+
+    <!--
+        SEGURANÇA PARA IFRAMES
+        sandbox - Determina as permissões para o que eu posso fazer dentro do iframe, se eu colocar a opção sandbox como propriedade ele irá bloquear tudo, mas podemos realizar algumas permissões se necessário como:
+            -allow-same-origin: Permitir conteúdos de mesma origem
+            -allow-forms: permitir formulários
+            -allow-scripts: permitir scripts, pois alguns formulários utilizam scripts
+            -...
+
+        referrerpolicy="no-referrer"> é para que não seja capturados seus dados de navegação pelos sites e navegadores, para utilizar como propaganda por exemplo
+
+    -->
+
+
+    <iframe src="paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, magnam. Provident harum culpa deleniti, quaerat ullam, dignissimos atque explicabo expedita adipisci officiis commodi id odio quod obcaecati mollitia numquam minus.</p>
+</body>
+</html>
